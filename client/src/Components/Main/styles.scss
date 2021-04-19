@@ -1,0 +1,131 @@
+$bg-img: url('../../assets/rectangle.svg');
+$bg-img-bottom: url('../../assets/bg_footer.svg');
+$bg-card-img: url('../../assets/bg_card_icon.svg');
+
+.top {
+  background-image: $bg-img;
+  background-size: cover;
+  background-position: bottom;
+  height: 655px;
+  padding-top: 90px;
+  position: relative;
+  @media screen and (max-width: 840px) {
+    height: auto;
+  }
+  &__title {
+    width: 50%;
+    @media screen and (max-width: 840px) {
+      width: 100%;
+    }
+    &-bold {
+      font-weight: 700;
+    }
+    h1 {
+      color: #FFFFFF;
+    }
+  }
+  &__h4 {
+    margin-bottom: 32px;
+    color: #FFFFFF;
+  }
+  &__mobile {
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    transform: translateX(50%);
+    @media screen and (max-width: 840px) {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 300px;
+    }
+  }
+}
+.center {
+  text-align: center;
+  &__title {
+    max-width: 538px;
+    margin: 16px auto 28px;
+    &-bold {
+      font-weight: 700;
+    }
+  }
+  &__p {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  &__card {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+    }
+  }
+}
+.card {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 32px;
+  width: 380px;
+  text-align: center;
+  margin: 10px;
+  padding: 40px 27px;
+  background: #FFFFFF;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+  &__cardIcon {
+    background: $bg-card-img no-repeat center;
+    height: 96px;
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    margin-top: 42px;
+    margin-bottom: 10px;
+  }
+  &__p {
+    margin-top: 17px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  @media screen and (max-width: 1060px) {
+    padding: 40px 10px;
+  }
+}
+.bottom {
+  margin-top: 110px;
+  background-image: $bg-img-bottom;
+  background-size: cover;
+  background-position: top;
+  height: 184px;
+  text-align: center;
+  &__blockInput {
+    display: inline-block;
+    margin-top: 24px;
+    background: #FFFFFF;
+    padding: 4px;
+    border: 1px solid #F1F1F1;
+    border-radius: 10px;
+  }
+  &__input {
+    width: 410px;
+    padding: 0 15px;
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+    @media screen and (max-width: 410px) {
+      width: 150px;
+    }
+  }
+}

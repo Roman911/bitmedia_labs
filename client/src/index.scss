@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import "src/variabels/colors";
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #E5E5E5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $grayLink;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flexSB {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1, h2, h3 {
+  color: $black;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  @media screen and (max-width: 600px) {
+    font-size: 38px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  color: $gray;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  color: $gray;
+}
+
+input {
+  border: none;
+  outline: none;
+  color: $lightGray;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}

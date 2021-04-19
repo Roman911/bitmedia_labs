@@ -1,0 +1,31 @@
+@import "src/variabels/colors";
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 14px 0;
+  @media screen and (max-width: 670px) {
+    padding: 0;
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+  &__logo {
+    font-size: 32px;
+    color: #FFFFFF;
+    @media screen and (max-width: 670px) {
+      font-size: 24px;
+    }
+  }
+  &__p {
+    color: #FFFFFF;
+    @media screen and (max-width: 670px) {
+      font-size: 14px;
+      margin: 5px;
+    }
+  }
+  &-darkBlue {
+    background: $dark-blue;
+  }
+}

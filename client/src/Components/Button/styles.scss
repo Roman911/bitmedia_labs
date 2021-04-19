@@ -1,0 +1,16 @@
+@import "src/variabels/colors";
+
+.btn {
+  padding: 18px 35px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  &-white {
+    background: #ffffff;
+    color: $blue;
+  }
+  &-blue {
+    background: $blue;
+    color: #ffffff;
+  }
+}

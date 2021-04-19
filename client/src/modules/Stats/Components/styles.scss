@@ -1,0 +1,79 @@
+@import "src/variabels/colors";
+
+.stats {
+  padding-top: 90px;
+  padding-bottom: 120px;
+  @media screen and (max-width: 980px) {
+    overflow-x: auto;
+  }
+  &__h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  table {
+    tr {
+      th {
+        background: $blue;
+        padding: 14px 24px;
+        font-size: 16px;
+        color: #FFFFFF;
+        font-weight: 400;
+        &:first-child {
+          border-top-left-radius: 8px;
+        }
+        &:last-child {
+          border-top-right-radius: 8px;
+        }
+      }
+    }
+    tr {
+      background: #FBFBFB;
+      cursor: pointer;
+      td {
+        color: $black;
+        text-align: center;
+        padding: 6px 24px;
+        font-size: 16px;
+        &:nth-child(2),
+        &:nth-child(3) {
+          text-align: start;
+        }
+      }
+      &:nth-child(even) {
+        background: #F1F1F1;
+      }
+    }
+  }
+  &__btnBlock {
+    margin-top: 20px;
+    text-align: center;
+  }
+  &__btn {
+    margin: 4px;
+    background: #E5E5E5;
+    border: 2px solid #F1F1F1;
+    border-radius: 8px;
+    padding: 14px 19px;
+    &:hover,
+    &-blue {
+      background: $blue;
+      color: #FFFFFF;
+    }
+  }
+  @media screen and (max-width: 1240px) {
+    table {
+      tr {
+        th {
+          padding: 10px 14px;
+          font-size: 14px;
+        }
+      }
+      tr {
+        td {
+          padding: 4px 14px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "src/variabels/colors";
+
+.breadcrumbs {
+  a:hover {
+    color: $blue;
+  }
+  &__arrow {
+    padding: 0 8px;
+    color: $grayLink;
+    @media screen and (max-width: 370px) {
+      padding: 0 6px;
+    }
+  }
+  &__active {
+    a {
+      color: $blue;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    a {
+      font-size: 13px;
+    }
+  }
+}
