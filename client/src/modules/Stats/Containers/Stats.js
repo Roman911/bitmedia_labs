@@ -9,7 +9,7 @@ export const Stats = () => {
   useEffect(() => {
     const offset = btnActive * 150 - 150
 
-    axios.get('http://localhost:3005/users', {
+    axios.get('35.188.31.91:3002', {
       params: {
         limit: 150,
         offset

@@ -8,7 +8,7 @@ export const User = () => {
   const [ user, setUser ] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:3005/user', {
+    axios.get('http://35.188.31.91:3002/user', {
       params: { id }
     })
       .then(response => {
